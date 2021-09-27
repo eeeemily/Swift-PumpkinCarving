@@ -46,7 +46,7 @@
         <image name="evilpumpkin" width="170.5" height="170.5"/>
         <image name="leftEye" width="170.5" height="170.5"/>
         <image name="mouth" width="170.5" height="170.5"/>
-        <image name="rightEye" width="170.5" height="170.5"/>
+        <image name="rightEye" width="171" height="171"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
