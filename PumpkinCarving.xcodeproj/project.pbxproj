@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A831B8A2702635A00690025 /* PumpkiinCarving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A831B892702635A00690025 /* PumpkiinCarving.swift */; };
 		6A9C98932702472A00AD5D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C98922702472A00AD5D58 /* AppDelegate.swift */; };
 		6A9C98952702472A00AD5D58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C98942702472A00AD5D58 /* SceneDelegate.swift */; };
 		6A9C98972702472A00AD5D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9C98962702472A00AD5D58 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A831B892702635A00690025 /* PumpkiinCarving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpkiinCarving.swift; sourceTree = "<group>"; };
 		6A9C988F2702472A00AD5D58 /* PumpkinCarving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PumpkinCarving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9C98922702472A00AD5D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A9C98942702472A00AD5D58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				6A9C989B2702472C00AD5D58 /* Assets.xcassets */,
 				6A9C989D2702472C00AD5D58 /* LaunchScreen.storyboard */,
 				6A9C98A02702472C00AD5D58 /* Info.plist */,
+				6A831B892702635A00690025 /* PumpkiinCarving.swift */,
 			);
 			path = PumpkinCarving;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				6A9C98972702472A00AD5D58 /* ViewController.swift in Sources */,
 				6A9C98932702472A00AD5D58 /* AppDelegate.swift in Sources */,
 				6A9C98952702472A00AD5D58 /* SceneDelegate.swift in Sources */,
+				6A831B8A2702635A00690025 /* PumpkiinCarving.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

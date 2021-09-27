@@ -69,15 +69,33 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5dl-q1-IyX" secondAttribute="bottom" constant="82" id="9kY-tY-Zbx"/>
                             <constraint firstItem="dfH-Wb-d0I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hHC-fa-WFp"/>
                             <constraint firstItem="5dl-q1-IyX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p67-zx-sgn"/>
                             <constraint firstItem="dfH-Wb-d0I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="whW-jl-Pbn"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Tcp-eI-FeG" appends="YES" id="4vx-9v-54R"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="leftEyeCover" destination="BL7-az-Uqa" id="hca-es-YAR"/>
+                        <outlet property="monthCover" destination="gxH-bJ-qnu" id="eLk-7L-Ruy"/>
+                        <outlet property="numProgressLabel" destination="NfK-M0-2MG" id="Sbh-el-8CZ"/>
+                        <outlet property="numPumpkinLabel" destination="pRa-Rh-QQ4" id="CfO-XI-5fb"/>
+                        <outlet property="progressLabel" destination="jRo-gI-A6V" id="joU-7W-xnB"/>
+                        <outlet property="rightEyeCover" destination="Ou6-SF-5WW" id="STN-up-LW0"/>
+                        <outlet property="scorePumpkinLabel" destination="mIx-9x-1k2" id="aPZ-NQ-jYG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Tcp-eI-FeG">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="bT9-HV-ZQg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
