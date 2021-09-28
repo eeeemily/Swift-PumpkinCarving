@@ -23,12 +23,12 @@ class ViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool { return true }
     
+    //localization and set everything up to original
     override func viewDidLoad() {
         super.viewDidLoad()
         scorePumpkinLabel.text = NSLocalizedString("str_pumpkinNumberLabel", comment: "")
         progressLabel.text = NSLocalizedString("str_progressLabel", comment: "")
         carveNextBtn.setTitle(NSLocalizedString("str_carveNextBtn", comment: ""), for: .normal)
-        // Do any additional setup after loading the view.
         updateScore(score: 0)
         numProgressLabel?.text = "0%"
         pumpkiinCarving.findCenterCG(with: self.view.frame)
@@ -39,16 +39,16 @@ class ViewController: UIViewController {
         nf.locale = Locale.current
         numPumpkinLabel?.text = nf.string(from: NSNumber(value: score))
     }
-    
+    //when "next" button is clicked: change the background color to indicate it's a new pumpkin; hide the carves; reset progress to 0%
     @IBAction func onNextBtn(_ sender: UIButton) {
         view.backgroundColor = UIColor(red: 0.5, green: 0.7, blue: 0.6, alpha: 1.0)
         leftEyeCover.isHidden = false
         rightEyeCover.isHidden = false
         monthCover.isHidden = false
         numProgressLabel?.text = "0%"
-
         pumpkiinCarving.next(carvable: true)
     }
+    //when the screen is tapped; change the background color back to white to indicate user is carving; send the point over to check
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1.0)
         let point = sender.location(in: self.view)
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
         }
         
     }
+    //carve pumpkin
     func carving(_ score: Int){
         let loc = pumpkiinCarving.carveProgress(score)
         numProgressLabel.text = pumpkiinCarving.progress(score)
@@ -74,4 +75,4 @@ class ViewController: UIViewController {
         monthCover.isHidden = false
     
     }
-    }
+}
