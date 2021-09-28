@@ -30,7 +30,8 @@ class ViewController: UIViewController {
         carveNextBtn.setTitle(NSLocalizedString("str_carveNextBtn", comment: ""), for: .normal)
         // Do any additional setup after loading the view.
         updateScore(score: 0)
-        
+        numProgressLabel?.text = "0%"
+        pumpkiinCarving.findCenterCG(with: self.view.frame)
 
     }
     func updateScore(score: Int) {
@@ -39,23 +40,34 @@ class ViewController: UIViewController {
         numPumpkinLabel?.text = nf.string(from: NSNumber(value: score))
     }
     
+    @IBAction func onNextBtn(_ sender: UIButton) {
+        view.backgroundColor = UIColor(red: 0.5, green: 0.7, blue: 0.6, alpha: 1.0)
+        leftEyeCover.isHidden = false
+        rightEyeCover.isHidden = false
+        monthCover.isHidden = false
+        numProgressLabel?.text = "0%"
+
+        pumpkiinCarving.next(carvable: true)
+    }
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+        view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1.0)
         let point = sender.location(in: self.view)
-        let(carvePumpkin,score,progress) = pumpkiinCarving.tryLocation(point)
-        carving(score)
-        updateScore(score: score)
-//        if progress==true{
-//            handleGameOver()
-//        }
+        let(numPumpkin,cut,carvePumpkin) = pumpkiinCarving.tryLocation(point)
+        if(carvePumpkin){
+            carving(cut)
+            updateScore(score: numPumpkin)
+        }
+        
     }
     func carving(_ score: Int){
         let loc = pumpkiinCarving.carveProgress(score)
-        if loc==1{
+        numProgressLabel.text = pumpkiinCarving.progress(score)
+        if loc==0{
+            monthCover.isHidden = true
+        }else if loc == 1{
             leftEyeCover.isHidden = true
         }else if loc == 2{
             rightEyeCover.isHidden = true
-        }else if loc == 3{
-            monthCover.isHidden = true
         }
     }
     func handleGameOver(){
