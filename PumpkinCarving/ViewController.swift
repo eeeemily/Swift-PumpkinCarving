@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numPumpkinLabel: UILabel!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var numProgressLabel: UILabel!
+    @IBOutlet weak var carveNextBtn: UIButton!
     
     let pumpkiinCarving = PumpkiinCarving()
     
@@ -24,8 +25,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scorePumpkinLabel.text = NSLocalizedString("str_pumpkinNumberLabel", comment: "")
+        progressLabel.text = NSLocalizedString("str_progressLabel", comment: "")
+        carveNextBtn.setTitle(NSLocalizedString("str_carveNextBtn", comment: ""), for: .normal)
         // Do any additional setup after loading the view.
         updateScore(score: 0)
+        
 
     }
     func updateScore(score: Int) {

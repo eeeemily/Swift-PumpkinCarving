@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "75%"; ObjectID = "NfK-M0-2MG"; */
+"NfK-M0-2MG.text" = "75%";
+
+/* Class = "UIButton"; normalTitle = "Carve Next Pumpkin"; ObjectID = "XoU-N7-Bs1"; */
+"XoU-N7-Bs1.normalTitle" = "Carve Next Pumpkin";
+
+/* Class = "UILabel"; text = "str_progress"; ObjectID = "jRo-gI-A6V"; */
+"jRo-gI-A6V.text" = "str_progress";
+
+/* Class = "UILabel"; text = "str_pumpkins"; ObjectID = "mIx-9x-1k2"; */
+"mIx-9x-1k2.text" = "str_pumpkins";
+
+/* Class = "UILabel"; text = "999"; ObjectID = "pRa-Rh-QQ4"; */
+"pRa-Rh-QQ4.text" = "999";

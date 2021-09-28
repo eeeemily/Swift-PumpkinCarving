@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  PumpkinCarving
+
+  Created by Zheng, Minghui on 9/27/21.
+  
+*/
+"str_pumpkinNumberLabel" = "Citrouille sculptée:";
+"str_progressLabel" = "Progrès de la sculpture:";
+"str_carveNextBtn" = "Découper la prochaine citrouille";
